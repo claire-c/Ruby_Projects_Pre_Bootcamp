@@ -1,4 +1,3 @@
-#Get a random category from the list of categories and then use that category to retrieve a random joke from said category.
 require 'json'
 require 'net/http'
 
