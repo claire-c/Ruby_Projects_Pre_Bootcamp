@@ -13,13 +13,3 @@ loop do
   break if category_pick == "exit"
   getJoke(category_pick)
 end
-# json = Net::HTTP.get(URI('https://api.chucknorris.io/jokes/random'))
-# hash = JSON.parse(json)
-#
-# choice = ""
-#
-# def getJoke(category_hash, category_choice)
-#   puts category_hash["value"]
-# end
-#
-# getJoke(hash, choice)
