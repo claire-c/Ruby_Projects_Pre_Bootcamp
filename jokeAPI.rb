@@ -11,8 +11,7 @@ def getJoke(category_choice=nil)
 end
 
 def getRandomJoke(category_choice=nil)
-  json = Net::HTTP.get(URI("https://api.chucknorris.io/jokes/categories"))
-  array = JSON.parse(json)
+  array = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/categories")))
   random_category = array.shuffle[0]
   joke_json = Net::HTTP.get(URI("https://api.chucknorris.io/jokes/random?category=#{random_category}"))
   joke_hash = JSON.parse(joke_json)
