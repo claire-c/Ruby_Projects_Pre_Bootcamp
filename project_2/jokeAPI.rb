@@ -1,27 +1,28 @@
-def getJokeCategories
+def getJokeCategories()
   categories_list = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/categories")))
-  puts categories_list
+  return categories_list
 end
 
 def getJoke(category_choice=nil)
+  api_url = "https://api.chucknorris.io/jokes/random"
   if category_choice == nil
-    hash = JSON.parse(Net::HTTP.get(URI('https://api.chucknorris.io/jokes/random')))
-    puts hash["value"]
+    joke = JSON.parse(Net::HTTP.get(URI(api_url)))
+    return joke["value"]
   else
-    categories_list = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/categories")))
+    categories_list = getJokeCategories()
       if categories_list.include?(category_choice)
-        joke_hash = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/random?category=#{category_choice}")))
-        puts joke_hash["value"]
+        joke = JSON.parse(Net::HTTP.get(URI(api_url + "?category=#{category_choice}")))
+        return joke["value"]
       else
-        puts "Is that a  typo?"
+        return nil
       end
   end
 end
 
 #This is practice
 def getRandomJoke(category_choice=nil)
-  categories_list = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/categories")))
+  categories_list = getJokeCategories()
   random_category = categories_list.shuffle[0]
-  joke_hash = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/random?category=#{random_category}")))
-  puts joke_hash["value"]
+  joke = JSON.parse(Net::HTTP.get(URI("https://api.chucknorris.io/jokes/random?category=#{random_category}")))
+  return joke["value"]
 end
