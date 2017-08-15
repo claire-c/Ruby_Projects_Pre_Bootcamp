@@ -5,18 +5,15 @@ end
 
 def getJoke(category_choice=nil)
   api_url = "https://api.chucknorris.io/jokes/random"
-  if category_choice == nil
-    joke = JSON.parse(Net::HTTP.get(URI(api_url)))
-    return joke["value"]
-  else
-    categories_list = getJokeCategories()
-      if categories_list.include?(category_choice)
-        joke = JSON.parse(Net::HTTP.get(URI(api_url + "?category=#{category_choice}")))
-        return joke["value"]
-      else
-        return nil
-      end
-  end
+  joke = JSON.parse(Net::HTTP.get(URI(api_url)))
+  return joke["value"] if category_choice == nil
+  categories_list = getJokeCategories()
+    if categories_list.include?(category_choice)
+      joke = JSON.parse(Net::HTTP.get(URI(api_url + "?category=#{category_choice}")))
+      return joke["value"]
+    else
+      return nil
+    end
 end
 
 #This is practice
