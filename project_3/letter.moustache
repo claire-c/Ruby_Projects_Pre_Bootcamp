@@ -1,0 +1,11 @@
+My letter template goes here I think???
+
+Dear {{name}},
+
+Thank you for your order.  We’ve just sent it to {{address}}.  Expect delivery in 3 - 5 working days.
+
+As a reminder, you ordered:
+{{order}}
+
+Thank you!
+Claire the newbie coder
