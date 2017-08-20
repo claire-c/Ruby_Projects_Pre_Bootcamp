@@ -9,6 +9,6 @@ loop do
   puts "What would you like? Type 'exit' to leave."
   category_pick = gets.chomp.downcase
   break if category_pick == "exit"
+  puts "Is that a typo?" if getJoke(category_pick) == nil
   puts getJoke(category_pick)
-  puts "Is that a typo?" if !the_categories.include?(category_pick)
 end
