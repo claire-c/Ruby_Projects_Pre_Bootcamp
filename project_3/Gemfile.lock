@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mustache (1.0.5)
+    smarter_csv (1.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mustache (~> 1.0)
+  smarter_csv (~> 1.1, >= 1.1.4)
+
+BUNDLED WITH
+   1.15.4
