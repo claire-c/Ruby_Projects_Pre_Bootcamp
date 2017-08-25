@@ -1,14 +1,20 @@
-#So I think what I have to do here is parse the CSV file and then manipulate it using Ruby code so that it fits in the mustache template.
 require "mustache"
 require "smarter_csv"
 require "./functions.rb"
 
-data = SmarterCSV.process('data.csv')
-#data is now saved as a hash
-puts data
+class Simple < Mustache #I'm not sure what's going on with this.
+end
+
+user_data = SmarterCSV.process('data.csv')
+
+getName(user_data) #OK I'm not sure if just listing the functions is correct but leave it here just now.
+getAddress(user_data)
+getOrder(user_data)
 
 
-#Letter.render
+Simple.template_file = './letter.mustache' #Err.
+Simple.render
+
 
 
 # Now create your app, myword.rb.  It should read the CSV file you point to in the first argument, and produce a number of text files - one for each row of the CSV - where you’ve substituted the values in your template, with the values in the CSV row.
