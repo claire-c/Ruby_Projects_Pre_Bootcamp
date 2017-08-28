@@ -2,7 +2,7 @@ require "mustache"
 require "smarter_csv"
 require "./functions.rb"
 
-class Simple < Mustache #I'm not sure what's going on with this.
+class Letter < Mustache #I'm not sure what's going on with this.
 end
 
 user_data = SmarterCSV.process('data.csv')
@@ -12,8 +12,8 @@ getAddress(user_data)
 getOrder(user_data)
 
 
-Simple.template_file = './letter.mustache' #Err.
-Simple.render
+Letter.template_file = './letter.mustache' #Err.
+Letter.render
 
 
 
