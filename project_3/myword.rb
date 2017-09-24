@@ -6,5 +6,4 @@ require "./letter.rb"
 
 user_data = SmarterCSV.process('data.csv')
 
-
-Letter.new.render
+puts address 

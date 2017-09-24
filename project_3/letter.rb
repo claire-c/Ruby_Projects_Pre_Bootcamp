@@ -1,3 +1,7 @@
+require "mustache"
+require "smarter_csv"
+require "./letter.rb"
+
 class Letter < Mustache
   def initialize(row = {})
     @options = row
@@ -16,4 +20,8 @@ class Letter < Mustache
   end
 end
 
-#map over the CSV and then render the letters 
+#map over the CSV and then render the letters
+
+user_data = SmarterCSV.process('data.csv')
+
+puts Letter.render
