@@ -1,27 +1,18 @@
 require "mustache"
 require "smarter_csv"
-require "./letter.rb"
 
-class Letter < Mustache
-  def initialize(row = {})
-    @options = row
-  end
-
-  def name
-    @options[:name]
-  end
-
-  def address
-    @options[:address]
-  end
-
-  def order
-    @options[:order]
-  end
+def render_template(row, template)
+  template[:name] = row[:name]
+  template[:address] = row[:address]
+  template[:order] = row[:order]
+  template.render
 end
-
-#map over the CSV and then render the letters
 
 user_data = SmarterCSV.process('data.csv')
 
-puts Letter.render
+Mustache.template_file = File.dirname(__FILE__) + '/letter.mustache'
+view = Mustache.new
+
+user_data.each do |each_row|
+  puts render_template(each_row, view)
+end
