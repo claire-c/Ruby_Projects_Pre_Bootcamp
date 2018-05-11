@@ -5,6 +5,7 @@ A range of starter projects, exploring Ruby and gemfile functionality. I worked 
 ## Project 1
 
 **Objective:** Figure out how to parse JSON in Ruby.
+
 **What I did:** Wrote a small app called "latlong.rb", which takes JSON format as a parameter. It parses the JSON in that file, and outputs just the longitudes, and latitudes.  Comma separated.  One pair on each line.
 **Example:**
 
@@ -20,6 +21,7 @@ should produce:
 ## Project 2
 
 **Objective:** Build on parsing JSON format and practise using basic APIs.
+
 **What I did:** Wrote a random joke generator app in Ruby that runs in Terminal. The program performs an HTTP GET request to the chucknorris.io API and retrieves a random joke based on the user's category input.
 
 **Example:**
