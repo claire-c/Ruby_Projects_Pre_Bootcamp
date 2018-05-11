@@ -1,8 +1,8 @@
-#My First Ruby Projects
+# My First Ruby Projects
 
 A range of starter projects, exploring Ruby and gemfile functionality. I worked on these projects six months before starting the CodeClan programming bootcamp in March 2018.
 
-##Project 1
+## Project 1
 
 **Objective:** Figure out how to parse JSON in Ruby.
 **What I did:** Wrote a small app called "latlong.rb", which takes JSON format as a parameter. It parses the JSON in that file, and outputs just the longitudes, and latitudes.  Comma separated.  One pair on each line.
@@ -17,7 +17,7 @@ should produce:
 4.210484, 101.975766
 ```
 
-##Project 2
+## Project 2
 
 **Objective:** Build on parsing JSON format and practise using basic APIs.
 **What I did:** Wrote a random joke generator app in Ruby that runs in Terminal. The program performs an HTTP GET request to the chucknorris.io API and retrieves a random joke based on the user's category input.
@@ -49,7 +49,7 @@ music
 Who let the dogs out? Chuck Norris let the dogs out... and then roundhouse kicked them through an Oldsmobile.
 ```
 
-##Project 3
+## Project 3
 
 **Objective:** Learn more about Bundler and gemfiles.
 
@@ -72,11 +72,11 @@ juice
 Thank you!
 Claire the newbie coder
 ```
-##Project 4
+## Project 4
 
 **Objective:** Learn more about HTTP. An exercise in learning, so sadly no code. I explored ports via Wikipedia and other online resources.
 
-##Project 5
+## Project 5
 
 **Objective:** Learn a bit about Sinatra by reading documentation and building my first routes.
 
