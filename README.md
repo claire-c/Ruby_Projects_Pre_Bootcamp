@@ -13,8 +13,10 @@ A range of starter projects, exploring Ruby and gemfile functionality. I worked 
 <p>
 should produce:
 <p>
-```41.871940, 12.567380
-4.210484, 101.975766```
+```
+41.871940, 12.567380
+4.210484, 101.975766
+```
 <p>
 <h2>Project 2</h2>
 <p></p>
@@ -25,7 +27,8 @@ should produce:
 <p>
 Running `joke2.rb` in Terminal:
 
-``` Choose a category and I will call an API to tell you a Chuck Norris joke...
+```
+Choose a category and I will call an API to tell you a Chuck Norris joke...
 explicit
 dev
 movie
@@ -44,7 +47,8 @@ money
 fashion
 What would you like? Type 'exit' to leave.
 music
-Who let the dogs out? Chuck Norris let the dogs out... and then roundhouse kicked them through an Oldsmobile.```
+Who let the dogs out? Chuck Norris let the dogs out... and then roundhouse kicked them through an Oldsmobile.
+```
 
 <p>
 <h2>Project 3</h2>
