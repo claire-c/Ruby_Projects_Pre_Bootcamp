@@ -9,7 +9,7 @@ A range of starter projects, exploring Ruby and gemfile functionality. I worked 
 <p>
 <b>Example:</b>
 <p>
-```ruby latlong demo.json```
+`ruby latlong demo.json`
 <p>
 should produce:
 <p>
@@ -57,6 +57,7 @@ Who let the dogs out? Chuck Norris let the dogs out... and then roundhouse kicke
 <p>
 Given CSV format `Amanda, 12 Timbuktu Avenue, wool:linen:juice` the template will render the following letter:
 <p>
+
 ```
 Dear Amanda,
 
