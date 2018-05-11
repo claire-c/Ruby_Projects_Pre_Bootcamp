@@ -45,6 +45,7 @@ fashion
 What would you like? Type 'exit' to leave.
 music
 Who let the dogs out? Chuck Norris let the dogs out... and then roundhouse kicked them through an Oldsmobile.```
+
 <p>
 <h2>Project 3</h2>
 <p>
