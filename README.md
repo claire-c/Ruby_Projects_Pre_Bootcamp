@@ -7,6 +7,7 @@ A range of starter projects, exploring Ruby and gemfile functionality. I worked 
 **Objective:** Figure out how to parse JSON in Ruby.
 
 **What I did:** Wrote a small app called "latlong.rb", which takes JSON format as a parameter. It parses the JSON in that file, and outputs just the longitudes, and latitudes.  Comma separated.  One pair on each line.
+
 **Example:**
 
 `ruby latlong demo.json`
